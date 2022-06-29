@@ -1,0 +1,206 @@
+/* scrol-bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 30px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:grey;
+    border-radius: 30px;
+  }
+/* scrol-bar */
+
+*{
+    box-sizing: border-box;
+}
+/* header */
+.header-logo{
+    margin-right: 10px;
+}
+.header-menu{
+    font-weight: bold;
+}
+.search-btn{
+    
+    width: 620px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.all-btn{
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    
+    
+   
+}
+.search-input{
+    border: none;
+    width: 84%;
+}
+.search-input:focus{
+    outline: none;
+}
+.iMPb-btn{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.header-btn{
+    font-weight: bold;
+    /* margin-right: 10px; */
+    font-size: 14px;
+
+}
+.header-right{
+    border-left: 2px solid gray;
+}
+/* header */
+
+/* main */
+.tab-btn{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tab-btn:hover{
+    color: white;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: #ffc107;
+    color: black;
+
+}
+
+
+.uzbek-movie-list, .india-movie-list, .pusi-movie-list, .all-movie-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+
+.movie-box{
+    width: 19%;
+    margin-bottom: 40px;
+    transition: all 1s ease;
+
+}
+.movie-box:hover .movie-img{
+    opacity: 0.3;
+    cursor: pointer;
+    
+}
+.movie-box:hover .movie-play-icon{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.movie-name{
+    color: white;
+    font-size: 18px;
+    height: 55px;
+}
+.movie-img{
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    object-position: center;
+}
+.movie-img-box{
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+.movie-ganre{
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+}
+.movie-play-icon{
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+.movie-download{
+    text-decoration: none;
+}
+/* main */
+/* footer */
+
+.footer-section{
+    margin-top: 50px;
+}
+.footer-icons{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-icon{
+    font-size: 25px;
+    margin: 10px 20px;
+   
+
+}
+
+.footer-link{
+    color: gray;
+    transition: all .3s ease;
+}
+.footer-link:hover{
+    color: white;
+    display: inline-block;
+    transform: scale(1.2);
+}
+.footer-text-links{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.text-link{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 15px;
+    transition: all 0.5s ease;
+}
+.text-link:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer_amazon-link a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.footer_IMDb-link a{
+    color: gray;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+/* footer */
+
+
+

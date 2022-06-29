@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./fontawesome-5.12.0/css/all.css">
+    <link rel="stylesheet" href="./fontawesome-5.12.0/css/fontawesome.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-black">
+    
+   <!-- hedaer -->
+       <div class="header py-3 px-4 bg-dark">
+           <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <svg id="home_img" class="ipc-logo header-logo" xmlns="http://www.w3.org/2000/svg" width="64" height="32" viewBox="0 0 64 32" version="1.1"><g fill="#F5C518"><rect x="0" y="0" width="100%" height="100%" rx="4"></rect></g><g transform="translate(8.000000, 7.000000)" fill="#000000" fill-rule="nonzero"><polygon points="0 18 5 18 5 0 0 0"></polygon><path d="M15.6725178,0 L14.5534833,8.40846934 L13.8582008,3.83502426 C13.65661,2.37009263 13.4632474,1.09175121 13.278113,0 L7,0 L7,18 L11.2416347,18 L11.2580911,6.11380679 L13.0436094,18 L16.0633571,18 L17.7583653,5.8517865 L17.7707076,18 L22,18 L22,0 L15.6725178,0 Z"></path><path d="M24,18 L24,0 L31.8045586,0 C33.5693522,0 35,1.41994415 35,3.17660424 L35,14.8233958 C35,16.5777858 33.5716617,18 31.8045586,18 L24,18 Z M29.8322479,3.2395236 C29.6339219,3.13233348 29.2545158,3.08072342 28.7026524,3.08072342 L28.7026524,14.8914865 C29.4312846,14.8914865 29.8796736,14.7604764 30.0478195,14.4865461 C30.2159654,14.2165858 30.3021941,13.486105 30.3021941,12.2871637 L30.3021941,5.3078959 C30.3021941,4.49404499 30.272014,3.97397442 30.2159654,3.74371416 C30.1599168,3.5134539 30.0348852,3.34671372 29.8322479,3.2395236 Z"></path><path d="M44.4299079,4.50685823 L44.749518,4.50685823 C46.5447098,4.50685823 48,5.91267586 48,7.64486762 L48,14.8619906 C48,16.5950653 46.5451816,18 44.749518,18 L44.4299079,18 C43.3314617,18 42.3602746,17.4736618 41.7718697,16.6682739 L41.4838962,17.7687785 L37,17.7687785 L37,0 L41.7843263,0 L41.7843263,5.78053556 C42.4024982,5.01015739 43.3551514,4.50685823 44.4299079,4.50685823 Z M43.4055679,13.2842155 L43.4055679,9.01907814 C43.4055679,8.31433946 43.3603268,7.85185468 43.2660746,7.63896485 C43.1718224,7.42607505 42.7955881,7.2893916 42.5316822,7.2893916 C42.267776,7.2893916 41.8607934,7.40047379 41.7816216,7.58767002 L41.7816216,9.01907814 L41.7816216,13.4207851 L41.7816216,14.8074788 C41.8721037,15.0130276 42.2602358,15.1274059 42.5316822,15.1274059 C42.8031285,15.1274059 43.1982131,15.0166981 43.281155,14.8074788 C43.3640968,14.5982595 43.4055679,14.0880581 43.4055679,13.2842155 Z"></path></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--menu ipc-button__icon ipc-button__icon--pre" viewBox="0 0 24 24" fill="#aaa6a6" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"></path></svg>
+                    <span class="header-menu text-white">menu</span>
+                </div>
+                <div class="col-md-8">    
+                    <form action="" method="get">
+                        <label for="searchid" class="search-btn">
+                            <button class="all-btn">All
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--arrow-drop-down navbar__flyout__button-pointer" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"></path></svg>
+                            </button>
+                            
+                            <input class="search-input" type="search" placeholder="serach IMDb">
+                            <svg id="searchid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--magnify" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </label>
+                        <span class="iMPb-btn text-white">IMPbPro</span>
+                    </form>
+                    
+                </div>
+                <div class="col-md-2 header-right">
+                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--watchlist ipc-button__icon ipc-button__icon--pre" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M17 3c1.05 0 1.918.82 1.994 1.851L19 5v16l-7-3-7 3V5c0-1.05.82-1.918 1.851-1.994L7 3h10zm-4 4h-2v3H8v2h3v3h2v-3h3v-2h-3V7z" fill="#aaa6a6"></path></svg>
+                 <span class=" header-btn text-white ">Watchlist</span>
+                 <span class="header-btn text-white mx-2" >Sign In</span>
+                </div>
+            </div>
+           </div>
+           
+       </div>
+    <!-- hedaer -->
+    <!-- movie-section -->
+    <main class="movie-section">
+       <div class="container">
+        <h3 class="movie-name text-warning mt-4 mb-4">
+            Movie & TV trailers
+        </h3>
+        <!-- tab -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active tab-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">UZBEK FILMS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">INDIA FILMS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link tab-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">KURSTLAR VADIYSI</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tab-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-added" type="button" role="tab" aria-controls="pills-added" aria-selected="false">ALL FILMS</button>
+              </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <!-- UZBEK FILMS -->
+                <ul class="uzbek-movie-list text-center">
+                    
+                </ul>
+                <!-- UZBEK FILMS -->
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- INDIA FILMS -->
+                <ul class="india-movie-list text-center">
+                    
+                </ul>
+                <!-- INDIA FILMS -->
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <!-- KURSTLAR VADIYSI -->
+                <ul class="pusi-movie-list text-center">
+                    
+                </ul>
+                <!-- KURSTLAR VADIYSI -->
+            </div>
+            <div class="tab-pane fade" id="pills-added" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <!-- ALL FILMS -->
+                <ul class="all-movie-list text-center">
+                    
+                </ul>
+                <!-- ALL FILMS -->
+            </div>
+          </div>
+        <!-- tab -->
+       </div>
+
+    </main>
+    <!-- movie-section -->
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-icons">
+                <a class="footer-link" href="#"><i class="fab fa-facebook footer-icon"></i></a>
+                <a class="footer-link" href="#"><i class="fab fa-instagram footer-icon"></i></a>
+                <a class="footer-link" href="#"><i class="fab fa-twitch footer-icon"></i></a>
+                <a class="footer-link" href="#"><i class="fab fa-twitter footer-icon"></i></a>
+                <a class="footer-link" href="#"><i class="fab fa-youtube footer-icon"></i></a>
+                
+            </div>
+            <div class="footer-text-links">
+                <a class="text-link" href="#">Get the IMDb App</a>
+                <a class="text-link" href="#">Help</a>
+                <a class="text-link" href="#">Site Index</a>
+                <a class="text-link" href="#">IMDbPro</a>
+                <a class="text-link" href="#">Box Office Mojo</a>
+                <a class="text-link" href="#">IMDb Developer</a>
+                <a class="text-link" href="#">Press Room</a>
+                <a class="text-link" href="#">Advertising</a>
+                <a class="text-link" href="#">Jobs</a>
+                <a class="text-link" href="#">Conditions of Use</a>
+                <a class="text-link" href="#">Privacy Policy</a>
+                <a class="text-link" href="#">Interest-Based Ads  </a>
+
+            </div>
+            <div class="footer_amazon-link">
+                <a href="#">an amazon company</a>
+            </div>
+            <div class="footer_IMDb-link">
+                <a href="#">1990-2021 by IMDb.com, Inc.</a>
+            </div>
+            .
+        </div>
+    </footer>
+    <!-- footer -->
+    
+   
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/movies.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
